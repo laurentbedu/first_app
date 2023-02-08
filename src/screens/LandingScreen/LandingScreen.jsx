@@ -1,8 +1,11 @@
 import PincodeInput from "../../components/PincodeInput/PincodeInput";
 
-function LandingScreen() {
+function LandingScreen(props) {
+
+    const {setScreen} = props;
+    
     return ( <div className="text-center pt-2">
-        <PincodeInput title="Pin Code" color="blue"/>
+        <PincodeInput title="Pin Code" color="blue" setScreen={setScreen}/>
     </div> )
 }
 

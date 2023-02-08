@@ -2,7 +2,7 @@ import "./PincodeInput.css";
 
 function PincodeInput(props) {
   const user = { email: "bedulaurent@gmail.com", pincode: 1234 };
-  const {title, color} = props;
+  const {title, color, setScreen} = props;
 
   const handleInput = (e) => {
     const value = e.target.value;
@@ -32,8 +32,10 @@ function PincodeInput(props) {
           });
           setTimeout(() => {
             e.target.type = "password";
+            setScreen("todolist");
           }, 750);
           //TODO Changer de screen ...
+          
         } else {
           squares.forEach((input) => {
             input.classList.replace("border-dark", "border-danger");
