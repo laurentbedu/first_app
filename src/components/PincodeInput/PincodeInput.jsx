@@ -1,9 +1,12 @@
 import "./PincodeInput.css";
 
-function PincodeInput() {
+function PincodeInput(props) {
   const user = { email: "bedulaurent@gmail.com", pincode: 1234 };
+  const {title, color, backgroundColor, paddingTop} = props;
+  let titleToo = props.title;
 
-  const handleChange = (e) => {
+  const handleInput = (e) => {
+    titleToo = "1";
     const value = e.target.value;
     if (isNaN(value)) {
       e.target.value = "";
@@ -63,33 +66,34 @@ function PincodeInput() {
 
   return (
     <>
+        <h4 style={{color, backgroundColor, paddingTop}}>{title} {titleToo}</h4>
       <div className="d-flex justify-content-center py-1">
         <input
           id="pin1"
           type="text"
           className="square form-control border border-dark text-dark me-1"
-          onInput={handleChange}
+          onInput={handleInput}
           onClick={handleClick}
         ></input>
         <input
           id="pin2"
           type="text"
           className="square form-control border border-dark text-dark me-1"
-          onInput={handleChange}
+          onInput={handleInput}
           onClick={handleClick}
         ></input>
         <input
           id="pin3"
           type="text"
           className="square form-control border border-dark text-dark me-1"
-          onInput={handleChange}
+          onInput={handleInput}
           onClick={handleClick}
         ></input>
         <input
           id="pin4"
           type="text"
           className="square form-control border border-dark text-dark"
-          onInput={handleChange}
+          onInput={handleInput}
           onClick={handleClick}
         ></input>
       </div>

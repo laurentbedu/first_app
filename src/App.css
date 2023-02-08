@@ -1,10 +1,5 @@
 .App {
-  /* text-align: center; */
-  min-width: 320px;
-  max-width: 480px;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  min-width: 320px !important;
+  max-width: 480px !important;
+  background-color: #eee;
 }

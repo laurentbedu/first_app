@@ -1,0 +1,21 @@
+E01
+
+Installer Bootstrap : 
+npm i bootstrap
+
+Importer Bootstrap dans App.js
++ import "bootstrap/dist/css/bootstrap.min.css";
++ import "bootstrap/dist/js/bootstrap.bundle.js";
+tester en ajoutant .container
+
+Clean App.css et App.js
+
+Un premier screen (landing screen)
+
+Un premier composant (pin code input)
+
+Importer le composant dans le screen 
+
+Importer le screen dans App.js
+
+Développer le composant pin code
