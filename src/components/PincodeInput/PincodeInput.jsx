@@ -2,11 +2,9 @@ import "./PincodeInput.css";
 
 function PincodeInput(props) {
   const user = { email: "bedulaurent@gmail.com", pincode: 1234 };
-  const {title, color, backgroundColor, paddingTop} = props;
-  let titleToo = props.title;
+  const {title, color} = props;
 
   const handleInput = (e) => {
-    titleToo = "1";
     const value = e.target.value;
     if (isNaN(value)) {
       e.target.value = "";
@@ -66,7 +64,7 @@ function PincodeInput(props) {
 
   return (
     <>
-        <h4 style={{color, backgroundColor, paddingTop}}>{title} {titleToo}</h4>
+    <h4 style={{color}}>{title}</h4>
       <div className="d-flex justify-content-center py-1">
         <input
           id="pin1"
