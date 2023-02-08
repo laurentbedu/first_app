@@ -1,11 +1,17 @@
+import { useState } from "react";
+
 function EmptyComponent() {
 
-    const handleQqch = (e) => {
+    const [myState, setMyState] = useState("valeur initiale")
 
+    const handleClick = (e) => {
+        setMyState("nouvelle valeur")
     }
 
     return ( <>
-        <div className="" onClick={handleQqch}></div>
+        <h4>To do list ...</h4>
+        <button className="btn btn-primary" onClick={handleClick}>{myState}</button>
+        <div>{myState}</div>
     </> );
 }
 
