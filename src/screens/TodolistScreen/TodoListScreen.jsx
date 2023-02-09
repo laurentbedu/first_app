@@ -17,7 +17,7 @@ function TodoListScreen() {
         Todos List
         <div>
         {todoList.map(todo => {
-            return <div>{todo.title}</div>
+            return <div key={todo.id}>{todo.title}</div>
             //return console.log(todo)
 
         })}
