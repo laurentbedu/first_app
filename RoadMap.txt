@@ -24,3 +24,4 @@ E02
 
 Creer les screens de l'application (todolist, tasklist, taskdetail) avec juste un titre
 Utiliser les states pour mettre place la navigation et tester
+->https://reactjs.org/docs/hooks-state.html
