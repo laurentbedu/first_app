@@ -2,10 +2,10 @@ import { useState } from "react";
 
 function EmptyComponent() {
 
-    const [myState, setMyState] = useState("valeur initiale")
+    const [myState, setMyState] = useState("valeur initiale");
 
     const handleClick = (e) => {
-        setMyState("nouvelle valeur")
+        setMyState("nouvelle valeur");
     }
 
     return ( <>
