@@ -32,10 +32,8 @@ function PincodeInput(props) {
           });
           setTimeout(() => {
             e.target.type = "password";
-            setScreen("todolist");
+            setScreen("demo");
           }, 750);
-          //TODO Changer de screen ...
-          
         } else {
           squares.forEach((input) => {
             input.classList.replace("border-dark", "border-danger");

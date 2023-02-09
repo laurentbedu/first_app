@@ -19,3 +19,8 @@ Importer le composant dans le screen
 Importer le screen dans App.js
 
 Développer le composant pin code
+
+E02
+
+Creer les screens de l'application (todolist, tasklist, taskdetail) avec juste un titre
+Utiliser les states pour mettre place la navigation et tester
