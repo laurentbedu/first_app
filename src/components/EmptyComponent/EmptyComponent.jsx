@@ -19,6 +19,7 @@ function EmptyComponent() {
         <div>{myState}</div>
         <button className="btn btn-primary" onClick={handleCounterClick}>+</button>
         <div>{counter}</div>
+        <div>{counter}</div>
     </> );
 }
 
