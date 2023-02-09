@@ -2,7 +2,7 @@ import "./PincodeInput.css";
 
 function PincodeInput(props) {
   const user = { email: "bedulaurent@gmail.com", pincode: 1234 };
-  const {title, color, setScreen} = props;
+  const {title, color, setScreen, propertyState, setPropertyState} = props;
 
   const handleInput = (e) => {
     const value = e.target.value;
@@ -50,6 +50,7 @@ function PincodeInput(props) {
   };
 
   const handleClick = (e) => {
+    setPropertyState("Nouvelle valeur de property");
     document.querySelectorAll(".square").forEach((input) => {
       input.value = "";
       input.disabled = false;
@@ -64,7 +65,7 @@ function PincodeInput(props) {
 
   return (
     <>
-    <h4 style={{color}}>{title}</h4>
+    <h4 style={{color}}>{title} {propertyState}</h4>
       <div className="d-flex justify-content-center py-1">
         <input
           id="pin1"

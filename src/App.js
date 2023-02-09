@@ -1,12 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
-import { useState } from "react";
 import './App.css';
-import EmptyComponent from "./components/EmptyComponent/EmptyComponent";
+import { useState } from "react";
 import LandingScreen from './screens/LandingScreen/LandingScreen';
 import TaskDetailScreen from "./screens/TaskDetailScreen/TaskDetailScreen";
 import TaskListScreen from "./screens/TasklistScreen/TaskListScreen";
 import TodoListScreen from "./screens/TodolistScreen/TodoListScreen";
+import EmptyComponent from "./components/EmptyComponent/EmptyComponent";
 
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
 
   return (
     <div className="App container">
-      {screen === "landing" && <LandingScreen setScreen={setScreen}/>}
-      {screen === "demo" && <EmptyComponent />}
+      {screen === "landing" && <LandingScreen setScreen={setScreen} property="Property"/>}
+      {screen === "demo" && <EmptyComponent/>}
       <div className="d-flex pt-3 justify-content-center">
 
         <button className="btn btn-primary me-1" onClick={navigate} id="todolist">Todo List</button>
